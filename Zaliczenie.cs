@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text;
 namespace Calculator.ConsoleApp
@@ -15,20 +15,20 @@ namespace Calculator.ConsoleApp
 
                 try
                 {
-                    Console.WriteLine("Daniel Gajewski 1 rok informatyka"); // komunikat z imieniem i nazwiskiem.
-                    Console.WriteLine("Podaj proszę 1 liczbę:"); // pierwsza zmienna
+                    Console.WriteLine("Daniel Gajewski 2 rok informatyka"); // komunikat z imieniem i nazwiskiem.
+                    Console.WriteLine("Podaj proszę 1 liczbę:"); //  podajemy pierwszą zmienną
                     var number1 = GetInput();
 
                     Console.WriteLine("Jaką operację chcesz wykonać? Możliwe operacje to: '+', '-', '*', '/'."); // wybór danego działania.
                     var operation = Console.ReadLine();
 
-                    Console.WriteLine("Podaj proszę 2 liczbę:");// druga zmienna
+                    Console.WriteLine("Podaj proszę 2 liczbę:");//  wprowadzamy drugą zmienną
                     var number2 = GetInput();
 
-                    var result = Calculate(number1, number2, operation); // wynik działania.
+                    var result = Calculate(number1, number2, operation); // wynik  danego działania.
 
-                    Console.WriteLine($"Wynik Twojego działania to: {Math.Round(result, 2)}.\n"); // wyświetlanie wyniku działanie
-                    sw.WriteLine($"Wynik Twojego działania to: {Math.Round(result, 2)}.\n");// plik tekstowy będzie zawierał zawartośc naszego komunikatu o wyniku działania.
+                    Console.WriteLine($"Wynik Twojego działania to: {Math.Round(result, 2)}.\n"); // wyświetlanie wyniku działania
+                    sw.WriteLine($"Wynik Twojego działania to: {Math.Round(result, 2)}.\n");// plik tekstowy będzie zawierał zawartość naszego komunikatu o wyniku działania.
                     sw.Close();// zamknięcie pliku teskstowego.
                     
                     
